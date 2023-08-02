@@ -1,0 +1,53 @@
+{
+  "name": "gm-extra",
+  "version": "0.0.1",
+  "description": "gm-extra",
+  "type": "module",
+  "main": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "unpkg": "dist/index.iife.js",
+  "jsdelivr": "dist/index.iife.js",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+  "keywords": [
+    "Tampermonkey",
+    "Violentmonkey",
+    "Greasemonkey",
+    "userscript",
+    "greasyfork",
+    "typescript",
+    "vite"
+  ],
+  "author": "lisonge",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lisonge/gm-extra.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lisonge/gm-extra/issues"
+  },
+  "homepage": "https://github.com/lisonge/gm-extra#readme",
+  "devDependencies": {
+    "@types/node": "^20",
+    "axios": "1.4.0",
+    "prettier": "3.0.0",
+    "tsup": "7.1.0",
+    "typescript": "^5.1.6",
+    "vite-plugin-monkey": "^3.4.0"
+  }
+}
